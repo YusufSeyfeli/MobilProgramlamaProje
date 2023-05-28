@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1BD23"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/soru_sayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Soru Sayısı"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/soru"
+        android:text="Soru"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_above="@id/secim"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/secim"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/a_Sikki"
+            android:layout_margin="5dp"
+            android:backgroundTint="#EA1111"
+            android:text="A şıkkı"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_Sikki"
+            android:layout_margin="5dp"
+            android:backgroundTint="#EA1111"
+            android:text="B şıkkı"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/c_Sikki"
+            android:layout_margin="5dp"
+            android:backgroundTint="#EA1111"
+            android:text="C şıkkı"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_Sikki"
+            android:layout_margin="5dp"
+            android:backgroundTint="#EA1111"
+            android:text="D şıkkı"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cevap_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secim"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#16D31D"
+        android:text="Cevapla" />
+
+
+</RelativeLayout>
